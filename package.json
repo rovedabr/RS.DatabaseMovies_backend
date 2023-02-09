@@ -8,8 +8,8 @@
   "scripts": {
     "start": "node ./src/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["movies", "database","sql", "exercise", "Rocketseat"],
+  "author": "Ivan Roveda",
   "license": "ISC",
-  "description": ""
+  "description": "Exercício de banco de dados usando Node"
 }
