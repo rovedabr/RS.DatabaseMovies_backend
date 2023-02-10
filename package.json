@@ -3,7 +3,7 @@
     "bcrypt": "^5.1.0",
     "express": "^4.18.2",
     "knex": "^2.4.2",
-    "nodemon": "^2.0.20",
+    "sqlite": "^4.1.2",
     "sqlite3": "^5.1.4"
   },
   "name": "databasemovies",
@@ -22,5 +22,8 @@
   ],
   "author": "Ivan Roveda",
   "license": "ISC",
-  "description": "Exercício de banco de dados usando Node"
+  "description": "Exercício de banco de dados usando Node",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
