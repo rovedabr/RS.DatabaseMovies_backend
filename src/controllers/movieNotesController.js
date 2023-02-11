@@ -1,5 +1,6 @@
 const knex = require("../database/knex")
 const AppError = require("../utils/AppError")
+const sqliteConnection = require("../database/sqlite")
 
 class movieNotesController {
   async create(request, response) {
@@ -12,6 +13,17 @@ class movieNotesController {
       rating,
       user_id
     })
+
+    const movieRating = ["1", "2", "3", "4", "5"]
+    // const checkRating = await database.get("SELECT FROM *movieNotes WHERE rating = (?)", [rating])
+
+    console.log(rating)
+    const checkRating = movieRating.find(rating => {
+      if(rating === checkRating){
+        console.log("teste de rating")
+      }
+    })
+ //TENTAR USAR O FILTER AQUI
 
     const movieTagsInsert = movieNotes.map(() => {
       return {

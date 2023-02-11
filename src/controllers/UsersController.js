@@ -6,18 +6,19 @@ class UserController {
   async create(request, response) {
     const { name, email, password } = request.body
 
-    console.log(name)
-    // if(!name) {
-    //   throw new AppError("Favor inserir o nome (campo obrigatório)")
-    // }
+    if(!name) {
+      throw new AppError("Favor inserir o nome (campo obrigatório)")
+    }
 
     response.status(201).json({ name, email, password })
 
     const database = await sqliteConnection()
-    const checkUserExists = await database.get("SELECT * FROM users WHERE email = (?)", [email])
+    const checkUserExists = await database.get("SELECT *FROM users WHERE email = (?)", [email])
 
-    if(checkUserExists) {
-      throw new AppError("Este e-mail já está cadastrado.")
+    //problema no App error abaixo, não está fazendo a comparação
+    if(checkUserExists){ 
+      console.log(checkUserExists)
+      // throw new AppError("E-mail já cadastrado!")
     }
 
     const hashedPassword = await hash(password, 10)
