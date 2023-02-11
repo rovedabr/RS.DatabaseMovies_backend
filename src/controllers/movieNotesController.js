@@ -14,33 +14,19 @@ class movieNotesController {
       user_id
     })
 
-    var movieData = movieNotes.map(() => {
-      return {
-        title,
-        description,
-        rating,
-        user_id,
-        tagName, 
-        // movieNotes_id : id //ver aqui - o nome da coluna id éw diferente da coluna moviesNotes_id, ver como relacionar
-      }
-    })
-
-    // const tagNameInsert = movieData.map(() => {
+    // var movieData = movieNotes.map(() => {
     //   return {
-    //     id,
+    //     title,
+    //     description,
+    //     rating,
     //     user_id,
-    //     tagName
+    //     tagName, 
     //   }
-    //   console.log(movieData)
-      console.log(movieNotes)
-      console.log(user_id)
-      console.log(tagName)
-      // console.log(movieNotes_id)
+    // })
 
-      const movieTagsInsert = movieData.map(() => {
+      const movieTagsInsert = movieNotes.map(() => {
         return {
-          id,
-          // movieNotes_id,
+          movieNotes_id: movieNotes,
           user_id,
           tagName
         }
