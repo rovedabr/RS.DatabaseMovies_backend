@@ -1,7 +1,6 @@
 const knex = require("../database/knex")
 const AppError = require("../utils/AppError")
 
-
 class movieNotesController {
   async create(request, response) {
     const { title, description, rating, tagName } = request.body
@@ -14,23 +13,13 @@ class movieNotesController {
       user_id
     })
 
-    // var movieData = movieNotes.map(() => {
-    //   return {
-    //     title,
-    //     description,
-    //     rating,
-    //     user_id,
-    //     tagName, 
-    //   }
-    // })
-
-      const movieTagsInsert = movieNotes.map(() => {
-        return {
-          movieNotes_id: movieNotes,
-          user_id,
-          tagName
-        }
-      })
+    const movieTagsInsert = movieNotes.map(() => {
+      return {
+        movieNotes_id: movieNotes,
+        user_id,
+        tagName
+      }
+    })
 
     await knex("movieTags").insert(movieTagsInsert)
 
