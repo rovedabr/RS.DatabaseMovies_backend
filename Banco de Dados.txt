@@ -1,50 +1,53 @@
 USERS
 
 {
-	"user:"Adalto Silva",
+	"name":"Adalto Silva",
 	"email": "adalto_silva@gmail.com",
-	"password": "100",
+	"password": "100100"
 },
 {		
-	"user:"Adilson Serra" ,
+	"name":"Adilson Serra" ,
 	"email": "adilson_serra@yahoo.com.br",
-	"password": "101"
+	"password": "101101"
 },
 {		
-	"user:"Marcos Aguiar Junior" ,
+	"name":"Marcos Aguiar Junior" ,
 	"email": "aguiarjunior@gmail.gov.br",
-	"password": "102"
+	"password": "102102"
 },
 {		
-	"user:"Alan Caneca" ,
+	"name":"Alan Caneca" ,
 	"email": "alan2225@hotmail.com",
-	"password": "103"
+	"password": "103103"
 },
 {		
-	"user:"Ana Bezerra da Silva" ,
+	"name":"Ana Bezerra da Silva" ,
 	"email": "anabezerrra3805@gmail.com",
-	"password": "104"
+	"password": "104104"
 },
 {		
-	"user:"Andrea Pereira" ,
+	"name":"Andrea Pereira" ,
 	"email": "andreab_1996@yahoo.com",
-	"password": "105"
+	"password": "105105"
 },
 {		
-	"user:"Bruno Mattos" ,
+	"name":"Bruno Mattos" ,
 	"email": "brunom2007@hotmail.com",
-	"password": "106"
+	"password": "106106"
 },
 {		
-	"user:"Fit Island Academia" ,
+	"name":"Fit Island Academia" ,
 	"email": "fit_island@gmail.com",
-	"password": "107"
+	"password": "107107"
 },
 {		
-	"user:"Bruno Oliveira da Silva" ,
+	"name":"Bruno Oliveira da Silva" ,
 	"email": "brunno_oliveira@gmail.com",
-	"password": "108"
+	"password": "108108"
 }
+
+
+
 
 
 MOVIES
@@ -56,45 +59,56 @@ MOVIES
 	"tagName": "Documentário"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "Avatar, o Caminho da Água", 
+	"description": "Filme sobre a invasão dos humanos ao mundo de Pandora", 
+	"rating": "5"
+	"tagName: "Fantasia"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "A Mulher Rei", 
+	"description": "Filme com atriz Viola Davis",
+	"rating":"5",
+	"tagName": "Aventura"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "O Menu", 
+	"description": "Filme sobre um delicioso menu e algumas surpresas chocantes.", 
+	"rating": "3"
+	"tagName": "Romance"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "O Desconhecido", 
+	"description": "Um policial disfarçado em busca de uma confissão para resolver um crime"
+	"rating":"2"
+	"tagName":"Ação"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "Pantera Negra", 
+	"description": "A luta para proteger Wakanda após a morte de seu rei",
+	"rating":"5", 
+	"tagName": "Ação"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "Sorria"
+	"description": Um paciente cometer um suicídio brutal em sua frente, a psiquiatra Rose é perseguida por uma entidade maligna que muda de forma",
+	"rating": "4",
+	"tagName": "Terror"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "Mais que amigos",
+	"description": "Uma grande amizade que vira um grande amor",
+	"rating": "5",
+	"tagName":"Romance"
 },
 {
-	"title": 
-	"description":
-	"rating":
+	"title": "maldita: O musical",
+	"description": "Uma garotinha solitária e extraordinária, que usa a mente afiada e a imaginação fértil para mudar sua vida e transformar o mundo que a cerca"
+	"rating": "3",
+	"tagName":"Musical"
 }
+
+
+
 
 
 
