@@ -59,11 +59,28 @@ class movieNotesController {
   async delete(request, response) {
     const { id, movieNotes_id } = request.params
     await knex("movieNotes").where({ id }).delete()
-    console.log(id) 
-    console.log(movieNotes_id)
 
-    return response.json()
-    
+    return response.json()    
+  }
+
+  async indexMovies(request, response){
+    const { user_id, title, rating, tagName } = request.query
+
+    let movieNotes
+
+    if(movieTag){
+      const filterMovieTags = movieTags.split(",").map( tag => movieTags.trim())
+
+      movieNotes = await knex("movieTags")
+      .select([
+        "movieNotes_id", 
+        "movieNotes.title",
+        "movieNotes.rating",
+        "movieTags.tagName",
+        
+
+      ])
+    }
   }
 }
 
