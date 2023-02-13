@@ -48,7 +48,7 @@ class movieNotesController {
     const { id } = request.params
 
     const movieNote = await knex("movieNotes").where({id}).first()
-    const movieTag = await knex("movieTags").where({movieNotes_id:id}).orderBy("name")
+    const movieTag = await knex("movieTags").where({user_id:id}).orderBy("tagName")
     
     return response.json({
       ...movieNote,
@@ -57,8 +57,10 @@ class movieNotesController {
   }
 
   async delete(request, response) {
-    const { id } = request.params
-    await knex("movieNotes").where({id}).delete()
+    const { id, movieNotes_id } = request.params
+    await knex("movieNotes").where({ id }).delete()
+    console.log(id) 
+    console.log(movieNotes_id)
 
     return response.json()
     
