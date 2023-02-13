@@ -16,7 +16,7 @@ class UserController {
     const checkUserExists = await database.get("SELECT *FROM users WHERE email = (?)", [email])
 
     //problema no App error abaixo, não está fazendo a comparação
-    if(checkUserExists){ 
+    if(checkUserExists){  
       console.log(checkUserExists)
       // throw new AppError("E-mail já cadastrado!")
     }
