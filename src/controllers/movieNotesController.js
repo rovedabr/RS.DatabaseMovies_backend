@@ -8,12 +8,8 @@ class movieNotesController {
     const { user_id } = request.params
 
     const movieRate = Array(rating)
-    console.log(typeof(movieRate))
-
     const movieRates = ["1", "2", "3", "4", "5"]
-
     const rateOk = movieRates.some((rate) => movieRate.includes(rate))
-    console.log(rateOk)
 
     if(!rateOk) {
        throw new AppError("O valor de rating do filme vai de 1 a 5")
@@ -25,6 +21,14 @@ class movieNotesController {
       rating,
       user_id
     })
+
+    const movieTag = Array(tagName)
+    const movieTagClassification = ["Ação", "Aventura", "Biográfico", "Comédia", "Fantasia", "Musical", "Ficção", "Romance", "Terror"]
+    const tagOk= movieTagClassification.some((tag) => movieTag.includes(tag))
+
+    if(!tagOk) {
+      throw new AppError(" A Tag de classificação dos filmes deverá ser escolhioda entre os itens: Ação, Aventura, Biográfico, Comédia, Fantasia, Musical, Ficção, Romance, Terror")
+    }
 
     const movieTagsInsert = movieNotes.map(() => {
       return {
