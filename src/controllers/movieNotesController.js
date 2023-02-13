@@ -16,8 +16,7 @@ class movieNotesController {
     console.log(rateOk)
 
     if(!rateOk) {
-      return 
-        throw new AppError("O valor de rating do filme vai de 1 a 5")
+       throw new AppError("O valor de rating do filme vai de 1 a 5")
       }
     
     const movieNotes = await knex("movieNotes").insert({
@@ -26,18 +25,6 @@ class movieNotesController {
       rating,
       user_id
     })
-
-
-    
-    // const checkRating = await database.get("SELECT FROM *movieNotes WHERE rating = (?)", [rating])
-
-/*     console.log(rating)
-    const checkRating = movieRating.find(rating => {
-      if(rating === checkRating){
-        console.log("teste de rating")
-      }
-    }) */
- //TENTAR USAR O FILTER AQUI
 
     const movieTagsInsert = movieNotes.map(() => {
       return {
