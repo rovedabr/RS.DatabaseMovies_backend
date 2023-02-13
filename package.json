@@ -26,5 +26,13 @@
   "description": "Exercício de banco de dados usando Node",
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rovedabr/DatabaseMovies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rovedabr/DatabaseMovies/issues"
+  },
+  "homepage": "https://github.com/rovedabr/DatabaseMovies#readme"
 }

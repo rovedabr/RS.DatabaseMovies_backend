@@ -1,0 +1,107 @@
+USERS
+
+{
+	"user:"Adalto Silva",
+	"email": "adalto_silva@gmail.com",
+	"password": "100",
+},
+{		
+	"user:"Adilson Serra" ,
+	"email": "adilson_serra@yahoo.com.br",
+	"password": "101"
+},
+{		
+	"user:"Marcos Aguiar Junior" ,
+	"email": "aguiarjunior@gmail.gov.br",
+	"password": "102"
+},
+{		
+	"user:"Alan Caneca" ,
+	"email": "alan2225@hotmail.com",
+	"password": "103"
+},
+{		
+	"user:"Ana Bezerra da Silva" ,
+	"email": "anabezerrra3805@gmail.com",
+	"password": "104"
+},
+{		
+	"user:"Andrea Pereira" ,
+	"email": "andreab_1996@yahoo.com",
+	"password": "105"
+},
+{		
+	"user:"Bruno Mattos" ,
+	"email": "brunom2007@hotmail.com",
+	"password": "106"
+},
+{		
+	"user:"Fit Island Academia" ,
+	"email": "fit_island@gmail.com",
+	"password": "107"
+},
+{		
+	"user:"Bruno Oliveira da Silva" ,
+	"email": "brunno_oliveira@gmail.com",
+	"password": "108"
+}
+
+
+MOVIES
+
+{
+	"title": "Elvis",
+	"description":"Documentário sobre a vida de Elvis Presley""
+	"rating": "5",
+	"tagName": "Documentário"
+},
+{
+	"title": 
+	"description":
+	"rating":
+},
+{
+	"title": 
+	"description":
+	"rating":
+},
+{
+	"title": 
+	"description":
+	"rating":
+},
+{
+	"title": 
+	"description":
+	"rating":
+},
+{
+	"title": 
+	"description":
+	"rating":
+},
+{
+	"title": 
+	"description":
+	"rating":
+},
+{
+	"title": 
+	"description":
+	"rating":
+},
+{
+	"title": 
+	"description":
+	"rating":
+}
+
+
+
+
+
+
+
+
+
+
