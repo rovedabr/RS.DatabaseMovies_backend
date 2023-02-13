@@ -27,7 +27,7 @@ class movieNotesController {
     const tagOk= movieTagClassification.some((tag) => movieTag.includes(tag))
 
     if(!tagOk) {
-      throw new AppError(" A Tag de classificação dos filmes deverá ser escolhioda entre os itens: Ação, Aventura, Biográfico, Comédia, Fantasia, Musical, Ficção, Romance, Terror")
+      throw new AppError(" A Tag de classificação dos filmes deverá ser escolhida entre os itens: Ação, Aventura, Biográfico, Comédia, Fantasia, Musical, Ficção, Romance, Terror")
     }
 
     const movieTagsInsert = movieNotes.map(() => {
@@ -42,6 +42,26 @@ class movieNotesController {
 
     response.json() 
 
+  }
+
+  async showMovies(request, response) {
+    const { id } = request.params
+
+    const movieNote = await knex("movieNotes").where({id}).first()
+    const movieTag = await knex("movieTags").where({movieNotes_id:id}).orderBy("name")
+    
+    return response.json({
+      ...movieNote,
+      movieTag
+    })
+  }
+
+  async delete(request, response) {
+    const { id } = request.params
+    await knex("movieNotes").where({id}).delete()
+
+    return response.json()
+    
   }
 }
 

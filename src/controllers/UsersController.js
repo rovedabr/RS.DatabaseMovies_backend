@@ -34,9 +34,9 @@ class UserController {
 
     console.log(user)
 
-    // if(!user){
-    //   throw new AppError("Usuário não encontrado")
-    // }
+    if(!user){
+      throw new AppError("Usuário não encontrado")
+    }
 
     const userWithUpdateEmail = await database.get("SELECT * FROM users WHERE email = (?)", [email])
 
