@@ -90,6 +90,18 @@ class movieNotesController {
         .whereLike("title", `%${title}%`)
         .orderBy("title")
     }
+
+    const userMovieTags = await knex("movieTags").where({ user_id })
+    const movieNotesWithTags = movieNotes.map( note => {
+      const movieTags = userMovieTags.filter(tag => tag.movieNotes_id === movieNotes_id)
+
+      return {
+        ...movieNote,
+        movieTag:movieTags
+      }
+    })
+
+    return response.json(movieNotesWithTags)
   }
 }
 
