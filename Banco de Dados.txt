@@ -56,13 +56,13 @@ MOVIES
 	"title": "Elvis",
 	"description":"Documentário sobre a vida de Elvis Presley""
 	"rating": "5",
-	"tagName": "Documentário"
+	"tagName": "Biográfico"
 },
 {
 	"title": "Avatar, o Caminho da Água", 
 	"description": "Filme sobre a invasão dos humanos ao mundo de Pandora", 
-	"rating": "5"
-	"tagName: "Fantasia"
+	"rating": "5",
+	"tagName": "Fantasia"
 },
 {
 	"title": "A Mulher Rei", 
@@ -101,8 +101,8 @@ MOVIES
 	"tagName":"Romance"
 },
 {
-	"title": "maldita: O musical",
-	"description": "Uma garotinha solitária e extraordinária, que usa a mente afiada e a imaginação fértil para mudar sua vida e transformar o mundo que a cerca"
+	"title": "Maldita: O musical",
+	"description": "Uma garotinha solitária e extraordinária, que usa a mente afiada e a imaginação fértil para mudar sua vida e transformar o mundo que a cerca",
 	"rating": "3",
 	"tagName":"Musical"
 }
