@@ -1,5 +1,7 @@
 
-# Aplicação em Node
+# Back-end - Rocket Movies (API)
+
+## Aplicação em Node
 
 Aplicação em Node.js utilizando um banco de dados relacional (SQlite) para cadastro de usuários, filmes e dados dos filmes permitindo criar, consultar, deletar ou alterar os dados registrados.
 
